@@ -5,7 +5,7 @@ metadata:
     tags: "dotnet,backend,grpc"
 containers:
   cart:
-    image: ghcr.io/pr3s3nt/onlineboutique.cart:latest
+    image: "."
     variables:
       REDIS_ADDR: "${resources.redis.cart.host}:${resources.redis.cart.port},user=${resources.redis.cart.username},password=${resources.redis.cart.password}"
     resources:

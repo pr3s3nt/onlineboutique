@@ -5,7 +5,7 @@ metadata:
     tags: "golang,backend,grpc"
 containers:
   checkout:
-    image: ghcr.io/pr3s3nt/onlineboutique.checkout:latest
+    image: "."
     variables:
       CART_SERVICE_ADDR: "${resources.cart.name}:7070"
       CURRENCY_SERVICE_ADDR: "${resources.currency.name}:7000"

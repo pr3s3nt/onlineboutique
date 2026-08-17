@@ -5,7 +5,7 @@ metadata:
     tags: "python,backend,grpc"
 containers:
   email:
-    image: ghcr.io/pr3s3nt/onlineboutique.email:latest
+    image: "."
     variables:
       DISABLE_PROFILER: "1"
       PORT: "8080"

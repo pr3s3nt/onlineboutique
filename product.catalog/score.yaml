@@ -5,7 +5,7 @@ metadata:
     tags: "golang,backend,grpc"
 containers:
   product.catalog:
-    image: ghcr.io/pr3s3nt/onlineboutique.product.catalog:latest
+    image: "."
     variables:
       DISABLE_PROFILER: "1"
       PORT: "3550"

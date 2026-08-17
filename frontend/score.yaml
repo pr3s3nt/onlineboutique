@@ -5,7 +5,7 @@ metadata:
     tags: "golang,html,css,ui,http,website"
 containers:
   frontend:
-    image: ghcr.io/pr3s3nt/onlineboutique.frontend:latest
+    image: "."
     livenessProbe:
       httpGet:
         path: /_healthz
