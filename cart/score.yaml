@@ -7,7 +7,7 @@ containers:
   cart:
     image: "."
     variables:
-      REDIS_ADDR: "${resources.redis.cart.host}:${resources.redis.cart.port},user=${resources.redis.cart.username},password=${resources.redis.cart.password}"
+      REDIS_ADDR: "${resources.redis-cart.host}:${resources.redis-cart.port},user=${resources.redis-cart.username},password=${resources.redis-cart.password}"
     resources:
       limits:
         memory: "90Mi"
@@ -16,7 +16,7 @@ containers:
         memory: "70Mi"
         cpu: "200m"
 resources:
-  redis.cart:
+  redis-cart:
     type: redis
 service:
   ports:

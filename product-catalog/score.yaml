@@ -1,10 +1,10 @@
 apiVersion: score.dev/v1b1
 metadata:
-  name: product.catalog
+  name: product-catalog
   annotations:
     tags: "golang,backend,grpc"
 containers:
-  product.catalog:
+  product-catalog:
     image: "."
     variables:
       DISABLE_PROFILER: "1"

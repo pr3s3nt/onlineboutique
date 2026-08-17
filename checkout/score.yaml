@@ -12,7 +12,7 @@ containers:
       EMAIL_SERVICE_ADDR: "${resources.email.name}:5000"
       PAYMENT_SERVICE_ADDR: "${resources.payment.name}:50051"
       PORT: "5050"
-      PRODUCT_CATALOG_SERVICE_ADDR: "${resources.product.catalog.name}:3550"
+      PRODUCT_CATALOG_SERVICE_ADDR: "${resources.product-catalog.name}:3550"
       SHIPPING_SERVICE_ADDR: "${resources.shipping.name}:50051"
     resources:
       limits:
@@ -30,7 +30,7 @@ resources:
     type: service
   payment:
     type: service
-  product.catalog:
+  product-catalog:
     type: service
   shipping:
     type: service

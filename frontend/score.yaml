@@ -28,7 +28,7 @@ containers:
       ENABLE_PROFILER: "0"
       PAYMENT_SERVICE_ADDR: "${resources.payment.name}:50051"
       PORT: "8080"
-      PRODUCT_CATALOG_SERVICE_ADDR: "${resources.product.catalog.name}:3550"
+      PRODUCT_CATALOG_SERVICE_ADDR: "${resources.product-catalog.name}:3550"
       RECOMMENDATION_SERVICE_ADDR: "${resources.recommendation.name}:8080"
       SHIPPING_SERVICE_ADDR: "${resources.shipping.name}:50051"
       SHOPPING_ASSISTANT_SERVICE_ADDR: "not-used-yet:8080"
@@ -61,7 +61,7 @@ resources:
       port: 8080
   payment:
     type: service
-  product.catalog:
+  product-catalog:
     type: service
   recommendation:
     type: service
