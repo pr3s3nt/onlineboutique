@@ -1,11 +1,11 @@
 apiVersion: score.dev/v1b1
 metadata:
-  name: productcatalog
+  name: product.catalog
   annotations:
     tags: "golang,backend,grpc"
 containers:
-  productcatalog:
-    image: us-central1-docker.pkg.dev/google-samples/microservices-demo/productcatalogservice:v0.10.5
+  product.catalog:
+    image: us-central1-docker.pkg.dev/google-samples/microservices-demo/product.catalogservice:v0.10.5
     variables:
       DISABLE_PROFILER: "1"
       PORT: "3550"

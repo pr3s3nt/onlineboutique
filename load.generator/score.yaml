@@ -1,11 +1,11 @@
 apiVersion: score.dev/v1b1
 metadata:
-  name: loadgenerator
+  name: load.generator
   annotations:
     tags: "python"
 containers:
-  loadgenerator:
-    image: us-central1-docker.pkg.dev/google-samples/microservices-demo/loadgenerator:v0.10.5
+  load.generator:
+    image: us-central1-docker.pkg.dev/google-samples/microservices-demo/load.generator:v0.10.5
     variables:
       FRONTEND_ADDR: "${resources.frontend.name}:80"
       USERS: "10"
