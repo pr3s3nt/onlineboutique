@@ -5,7 +5,7 @@ metadata:
     tags: "python,backend,grpc"
 containers:
   email:
-    image: us-central1-docker.pkg.dev/google-samples/microservices-demo/emailservice:v0.10.5
+    image: ghcr.io/pr3s3nt/onlineboutique.email:latest
     variables:
       DISABLE_PROFILER: "1"
       PORT: "8080"
